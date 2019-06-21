@@ -10,6 +10,7 @@ export default {
      * 支付宝(蚂蚁)：mpvue === my, mpvuePlatform === 'my'
      */
     
+    console.log('created app')
 
     let logs
     if (mpvuePlatform === 'my') {
@@ -32,5 +33,23 @@ export default {
 </script>
 
 <style>
+  page {
+      font-family: "PingFangSC-Thin";
+      font-size: 30rpx;
+      color: #333;
+      background: #fff;
+  }
 
+  /* text组件两行省略 */
+  .ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 </style>

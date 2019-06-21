@@ -1,5 +1,8 @@
 <template>
-    <div>{{value}}</div>
+    <div>
+      <div @click="go">index</div>
+    </div>
+    
 </template>
 
 <script>
@@ -13,12 +16,22 @@ export default {
   },
 
   methods: {
-    
+   go() {
+     mpvue.navigateTo({
+       url: '/pages/login/main'
+     })
+   }
   },
 
   created () {
     // let app = getApp()
-  }
+    console.log('index created')
+  },
+
+  mounted() {
+    console.log('index mounted')
+  },
+
 }
 </script>
 
